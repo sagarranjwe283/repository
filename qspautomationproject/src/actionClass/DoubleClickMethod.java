@@ -15,7 +15,7 @@ public class DoubleClickMethod
 	{
 		System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		driver.manage().window().maximize();
+		driver.manage().window().maximize();   //maximize the browser
 		driver.manage().timeouts().implicitlyWait(80,TimeUnit.SECONDS);
 		driver.get("https://demo.guru99.com/test/simple_context_menu.html");
 		WebElement target = driver.findElement(By.xpath("//button[contains(.,'Double')]"));
