@@ -19,7 +19,7 @@ public class DoubleClickMethod
 		driver.manage().timeouts().implicitlyWait(80,TimeUnit.SECONDS);
 		driver.get("https://demo.guru99.com/test/simple_context_menu.html");
 		WebElement target = driver.findElement(By.xpath("//button[contains(.,'Double')]"));
-		Actions act=new Actions(driver);
+		Actions act=new Actions(driver); //action class
 		act.doubleClick(target).perform();
 	}
 }
